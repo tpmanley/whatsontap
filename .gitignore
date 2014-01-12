@@ -1,0 +1,9 @@
+# Editor
+.idea/
+.pydev
+.pydevproject
+
+# Database
+*.db
+sqlite-jdbc-*
+xerial-sqlite-license.txt
