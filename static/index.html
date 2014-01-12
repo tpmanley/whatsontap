@@ -5,6 +5,7 @@
 <body ng-app="app" ng-controller="AppCtrl as app">
 <h1>What's On Tap</h1>
 
+<button ng-click="app.addTap()">Add Tap</button>
 <div ng-repeat="tap in app.taps">
     {{ tap.name }}
 </div>

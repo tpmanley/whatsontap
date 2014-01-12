@@ -15,7 +15,7 @@ class Tap(db.Model):
 
 
 api_manager = APIManager(app, flask_sqlalchemy_db=db)
-api_manager.create_api(Tap, methods=['GET'])
+api_manager.create_api(Tap, methods=['GET', 'POST'])
 
 
 @app.route('/')
