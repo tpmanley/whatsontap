@@ -8,7 +8,9 @@ app.controller("AppCtrl", function($http) {
     });
 
     app.addTap = function() {
-        $http.post('/api/tap', {"name":"new", "style":"N/A"})
+        $http.post('/api/tap', {"name":"new",
+                                "style":"N/A",
+                                "image":"http://www.placekitten.com/100/100/?image=" + app.taps.length})
             .success(function(data) {
                 app.taps.push(data);
             })

@@ -12,6 +12,9 @@ class Tap(db.Model):
     id = Column(Integer, primary_key=True)
     name = Column(Text, unique=False)
     style = Column(Text, unique=False)
+    abv = Column(Text, unique=False)
+    description = Column(Text, unique=False)
+    image = Column(Text, unique=False)
 
 
 api_manager = APIManager(app, flask_sqlalchemy_db=db)

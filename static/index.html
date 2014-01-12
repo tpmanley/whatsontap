@@ -7,6 +7,7 @@
 
 <button ng-click="app.addTap()">Add Tap</button>
 <div ng-repeat="tap in app.taps">
+    <img ng-src="{{ tap.image }}" alt=""/>
     {{ tap.name }}
 </div>
 
