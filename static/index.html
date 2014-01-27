@@ -9,11 +9,21 @@
 </head>
 <body ng-app="app" ng-controller="AppCtrl as app">
 <h1>What's On Tap</h1>
-
+<div>
 <button ng-click="app.addTap()">Add Tap</button>
+</div>
+
 <div ng-repeat="tap in app.taps">
-    <img ng-src="{{ tap.image }}" alt=""/>
-    {{ tap.name }}
+    <div class="row">
+        <div class="large-6 columns tap">
+            <img ng-src="{{ tap.image }}" alt=""/>
+            <h3>{{ tap.name }}</h3>
+            <p>Style: {{ tap.style }}<br/>
+            ABV: {{ tap.abv }}<br/>
+            Description: {{ tap.description }}<br/>
+            </p>
+        </div>
+    </div>
 </div>
 
 <script src="bower_components/angular/angular.js"></script>
