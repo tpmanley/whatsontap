@@ -8,13 +8,19 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body ng-app="app" ng-controller="AppCtrl as app">
-<h1>What's On Tap</h1>
+<header>
+  <div class="row">
+    <div class="large-12 columns">
+        <h1>What's On Tap</h1>
+    </div>
+  </div>
+</header>
 <div>
 <button ng-click="app.addTap()">Add Tap</button>
 </div>
 
-<div ng-repeat="tap in app.taps">
-    <div class="row">
+<div class="row">
+    <div ng-repeat="tap in app.taps">
         <div class="large-6 columns tap">
             <img ng-src="{{ tap.image }}" alt=""/>
             <h3>{{ tap.name }}</h3>
