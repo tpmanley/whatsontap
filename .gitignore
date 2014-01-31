@@ -7,3 +7,7 @@
 *.db
 sqlite-jdbc-*
 xerial-sqlite-license.txt
+
+# Other
+.env/
+*.egg-info/

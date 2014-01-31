@@ -3,6 +3,9 @@ from flask.ext.restless import APIManager
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, Integer, Text
 
+
+__version__ = "0.1"
+
 app = Flask(__name__, static_url_path="")
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tap.db'
 db = SQLAlchemy(app)
